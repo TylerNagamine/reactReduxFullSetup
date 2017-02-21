@@ -2,6 +2,10 @@
   "name": "flight",
   "version": "0.1.0",
   "description": "Flight by Finagraph",
+  "scripts": {
+    "webpack-dev": "webpack --config webpack.config.vendor.js && webpack --config webpack.config.js",
+    "webpack-prod": "webpack -p --env.prod --config webpack.config.vendor.js && webpack -p --env.prod --config webpack.config.js"
+  },
   "dependencies": {
     "aspnet-prerendering": "^2.0.0",
     "aspnet-webpack": "^1.0.27",
