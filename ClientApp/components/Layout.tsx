@@ -10,7 +10,7 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-declare var window: any;
+//declare var window: any;
 
 export interface ILayoutProps {
     //userAgent: string;
@@ -34,7 +34,7 @@ export default class Layout extends React.Component<ILayoutProps, void> {
                 <div>
                     <NavMenu />
                     <div className='site-body container'>
-                        { this.props.body }
+                        {this.props.body}
                     </div>
                 </div>
             </MuiThemeProvider>

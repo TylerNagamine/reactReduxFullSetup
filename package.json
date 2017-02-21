@@ -31,9 +31,12 @@
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0",
     "webpack-hot-middleware": "^2.12.2",
-    "webpack-merge": "^0.14.1"
+    "webpack-merge": "^0.14.1",
+    "es6-object-assign": "^1.0.3",
+    "es6-promise": "^4.0.5"
   },
   "devDependencies": {
+    "typescript": "^2.0.6",
     "@types/history": "^2.0.0",
     "@types/material-ui": "^0.16.51",
     "@types/react": "^0.14.29",
@@ -45,7 +48,6 @@
     "@types/redux": "3.5.27",
     "@types/webpack": "^2.2.0",
     "@types/webpack-env": "^1.13.0",
-    "@types/whatwg-fetch": "0.0.28",
-    "typescript": "^2.0.3"
+    "@types/whatwg-fetch": "0.0.28"
   }
 }

@@ -30,7 +30,7 @@ export class NavMenu extends React.Component<INavuMenuProps, INavMenuState> {
     public render() {
         return (
             <div>
-                <AppBar 
+                <AppBar
                     title="Hello world!"
                     onLeftIconButtonTouchTap={this.handleToggle}
                 />
