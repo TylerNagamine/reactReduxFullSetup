@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Curtain component should match snapshot 1`] = `
+<div
+  hidden={false}
+  style={
+    Object {
+      "background": "black",
+      "height": "100%",
+      "opacity": 0.5,
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "textAlign": "center",
+        "top": "45%",
+      }
+    }
+  >
+    <br />
+    <span
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      Test text
+    </span>
+  </div>
+</div>
+`;

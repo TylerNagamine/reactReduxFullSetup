@@ -42,3 +42,8 @@ Install the [.NET Core SDK](https://www.microsoft.com/net/core#windowscmd).
 * Ensure there is an Environment Variable with Name ``` ASPNETCORE_ENVIRONMENT ``` and value ``` Development ```
 (This is also where you can set Production, if desired)
 * Run the project
+
+# Testing
+## Javascript
+To run tests, use ``` npm test ```  
+We use [Jest](https://facebook.github.io/jest/) with [Enzyme](https://github.com/airbnb/enzyme) for testing  

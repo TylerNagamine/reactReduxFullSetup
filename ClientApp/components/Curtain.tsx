@@ -9,6 +9,11 @@ export interface ICurtainProps {
 export interface ICurtainState {
 }
 
+/**
+ * Basic curtain component.  When shown is set, the curtain appears over the parent object.
+ * Current limitation is that the parent must be set the position: relative.
+ * Props: curtainText: string, shown: boolean
+ */
 export class Curtain extends React.Component<ICurtainProps, ICurtainState> {
     styles = {
         height: '100%',

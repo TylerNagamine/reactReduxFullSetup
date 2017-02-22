@@ -4,7 +4,8 @@
   "description": "Flight by Finagraph",
   "scripts": {
     "webpack-dev": "webpack --config webpack.config.vendor.js && webpack --config webpack.config.js",
-    "webpack-prod": "webpack -p --env.prod --config webpack.config.vendor.js && webpack -p --env.prod --config webpack.config.js"
+    "webpack-prod": "webpack -p --env.prod --config webpack.config.vendor.js && webpack -p --env.prod --config webpack.config.js",
+    "test": "jest"
   },
   "dependencies": {
     "aspnet-prerendering": "^2.0.0",
@@ -40,7 +41,6 @@
     "es6-promise": "^4.0.5"
   },
   "devDependencies": {
-    "typescript": "^2.0.6",
     "@types/history": "^2.0.0",
     "@types/material-ui": "^0.16.51",
     "@types/react": "^0.14.29",
@@ -52,6 +52,37 @@
     "@types/redux": "3.5.27",
     "@types/webpack": "^2.2.0",
     "@types/webpack-env": "^1.13.0",
-    "@types/whatwg-fetch": "0.0.28"
+    "@types/whatwg-fetch": "0.0.28",
+    "@types/jest": "^18.1.1",
+    "@types/react-test-renderer": "^15.4.2",
+    "@types/enzyme": "^2.7.4",
+    "typescript": "^2.0.6",
+    "ts-jest": "^19.0.0",
+    "react-test-renderer": "^15.4.2",
+    "enzyme": "^2.7.1",
+    "react-addons-test-utils": "^15.4.2"
+  },  
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "testRegex": "(\\.(test|spec))\\.(ts|tsx|js|jsx)$",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$": "<rootDir>/test/mocks/fileMock.js",
+      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "globals": {
+      "DEVELOPMENT": false,
+      "FAKE_SERVER": false
+    }
   }
 }
