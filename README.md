@@ -1,20 +1,44 @@
-#Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Flight Onboarding Instructions
 
-#Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Clone Flight Repository
+Go to booyami.visualstudio.com and ensure you are in the [Flight repo](https://booyami.visualstudio.com/Booyami/_git/Flight)
 
-#Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+* In the menu bar: ``` Clone ```
 
-#Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+* Copy the [command line URL](https://booyami.visualstudio.com/Booyami/_git/Flight)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+* Open Git Extensions ``` Start -> Clone ```
+
+``` Repository to clone: <previously copied command line> ```  
+``` Destination: <your git path> ```  
+``` Subdirectory to create: <flight> ```  
+``` Branch: Dev ```
+
+* Clone
+
+# Install .NET Core SDK
+
+Install the [.NET Core SDK](https://www.microsoft.com/net/core#windowscmd). 
+
+# Environment Configuration
+
+* Install NPM packages
+
+``` cd <repo> ```  
+``` npm install ```
+
+# Before running the website
+* From the command line, navigate to the website project Subdirectory
+* Run ``` npm run webpack-dev ```.  This builds vendor dependencies. 
+
+# Running the website
+## Run from the command line
+* Run ``` set ASPNETCORE_ENVIRONMENT=Development ```
+* Run ``` dotnet run ```
+
+## In Visual Studio
+* Navigate to the Flight project settings
+* Navigate to the 'Debug' tab
+* Ensure there is an Environment Variable with Name ``` ASPNETCORE_ENVIRONMENT ``` and value ``` Development ```
+(This is also where you can set Production, if desired)
+* Run the project
