@@ -7,13 +7,14 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "skipDefaultLibCheck": true,
-    "lib": ["es6", "dom"],
+    "lib": [ "es6", "dom" ],
     "paths": {
       "history": [ "./node_modules/@types/history/index" ],
       "redux": [ "./node_modules/@types/redux/index" ],
       "react": [ "./node_modules/@types/react/index" ]
     }
   },
+  "compileOnSave": false,
   "exclude": [
       "bin",
       "node_modules"

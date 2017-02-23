@@ -5,7 +5,7 @@ module.exports = {
     process(src, path) {
         const isTs = path.endsWith('.ts');
         const isTsx = path.endsWith('.tsx');
-        console.log("preprocessing");
+
         if (isTs || isTsx) {
             src = tsc.transpileModule(
                 src,
