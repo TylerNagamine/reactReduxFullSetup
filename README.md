@@ -27,6 +27,8 @@ Install the [.NET Core SDK](https://www.microsoft.com/net/core#windowscmd).
 ``` cd <repo> ```  
 ``` npm install ```
 
+* Ensure typescript version for your editor is set to the current version of typescript. ``` npm ls typescript ```
+
 # Before running the website
 * From the command line, navigate to the website project Subdirectory
 * Run ``` npm run webpack-dev ```.  This builds vendor dependencies. 
