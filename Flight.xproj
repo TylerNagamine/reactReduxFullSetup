@@ -8,7 +8,7 @@
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>85727fca-3ed1-48c4-bbfe-58dc9a9e05b7</ProjectGuid>
-    <RootNamespace>Learningredux</RootNamespace>
+    <RootNamespace>Flight</RootNamespace>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup>

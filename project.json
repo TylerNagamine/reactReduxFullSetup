@@ -37,13 +37,13 @@
       ]
     }
   },
-
   "buildOptions": {
     "emitEntryPoint": true,
     "preserveCompilationContext": true,
     "compile": {
       "exclude": ["node_modules"]
-    }
+    },
+    "debugType": "portable"
   },
 
   "runtimeOptions": {
@@ -51,7 +51,6 @@
       "System.GC.Server": true
     }
   },
-
   "publishOptions": {
     "include": [
       "appsettings.json",
@@ -68,13 +67,13 @@
   "scripts": {
     "prepublish": [
       "npm install",
-      "node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod",
-      "node node_modules/webpack/bin/webpack.js --env.prod"
+      "node node_modules/webpack/bin/webpack.js -p --config webpack.config.vendor.js --env.prod",
+      "node node_modules/webpack/bin/webpack.js -p --env.prod"
     ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   },
 
   "tooling": {
-    "defaultNamespace": "Learningredux"
+    "defaultNamespace": "Flight"
   }
 }

@@ -34,9 +34,16 @@ Install the [.NET Core SDK](https://www.microsoft.com/net/core#windowscmd).
 * Run ``` npm run webpack-dev ```.  This builds vendor dependencies. 
 
 # Running the website
-## Run from the command line
-* Run ``` set ASPNETCORE_ENVIRONMENT=Development ```
-* Run ``` dotnet run ```
+
+Webpack devserver/hot module replacement is run automatically with the C# code when Development is set.
+
+## Run from cmd
+* ``` set ASPNETCORE_ENVIRONMENT=Development ```
+* ``` dotnet run ```
+
+## Powershell
+* ``` $env:ASPNETCORE_ENVIRONMENT = "Development" ```
+* ``` dotntet run ```
 
 ## In Visual Studio
 * Navigate to the Flight project settings
@@ -45,7 +52,17 @@ Install the [.NET Core SDK](https://www.microsoft.com/net/core#windowscmd).
 (This is also where you can set Production, if desired)
 * Run the project
 
+## Vscode
+* ASPNETCORE_ENVIRONMENT variable is contained in ``` .vscode/launch.json ```
+* ``` F5 ``` to start debugging.  ``` Ctrl + F5 ``` to start without Debugging.
+* Alternatively, ``` Ctrl + Shift + P ``` to open the command window, then search 'Start Debugging'
+
 # Testing
 ## Javascript
 To run tests, use ``` npm test ```  
 We use [Jest](https://facebook.github.io/jest/) with [Enzyme](https://github.com/airbnb/enzyme) for testing  
+
+# Recommended installs
+
+* [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+* [Redux Webtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)

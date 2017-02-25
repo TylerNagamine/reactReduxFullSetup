@@ -5,7 +5,10 @@
   "scripts": {
     "webpack-dev": "webpack --config webpack.config.vendor.js && webpack --config webpack.config.js",
     "webpack-prod": "webpack -p --env.prod --config webpack.config.vendor.js && webpack -p --env.prod --config webpack.config.js",
-    "test": "node node_modules\\jest\\bin\\jest.js"
+    "test": "node node_modules\\jest\\bin\\jest.js",
+    "build": "npm run webpack-prod",
+    "build:vendor": "webpack --config webpack.config.vendor.js",
+    "build:dev": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "aspnet-prerendering": "2.0.0",
