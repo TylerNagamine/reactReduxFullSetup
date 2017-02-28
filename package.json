@@ -43,7 +43,7 @@
     "es6-object-assign": "1.0.3",
     "es6-promise": "4.0.5",
     "sass-loader": "6.0.2",
-    "node-sass": "4.5.0",
+    "node-sass": "4.5.0"
   },
   "devDependencies": {
     "@types/enzyme": "2.7.5",
