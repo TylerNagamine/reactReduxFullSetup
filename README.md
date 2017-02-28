@@ -43,7 +43,7 @@ Webpack devserver/hot module replacement is run automatically with the C# code w
 
 ## Powershell
 * ``` $env:ASPNETCORE_ENVIRONMENT = "Development" ```
-* ``` dotntet run ```
+* ``` dotnet run ```
 
 ## In Visual Studio
 * Navigate to the Flight project settings
