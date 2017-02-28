@@ -22,10 +22,18 @@ module.exports = (env) => {
                         { loader: 'babel-loader' },
                         { loader: 'awesome-typescript-loader?silent=true' },
                     ]
+                },
+                {
+                    test: /\.scss$/,
+                    loader: ExtractTextPlugin.extract({
+                            fallback: 'style-loader',
+                            use: ['css-loader', 'sass-loader']
+                        })
                 }
             ]
         },
         plugins: [
+            new ExtractTextPlugin('site.css'),
             new CheckerPlugin()
         ]
     });
@@ -36,13 +44,11 @@ module.exports = (env) => {
         entry: { 'main-client': './ClientApp/boot-client.tsx' },
         module: {
             rules: [
-                { test: /\.css$/, use: ExtractTextPlugin.extract({ use: 'css-loader' }) },
                 { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
             ]
         },
         output: { path: path.join(__dirname, clientBundleOutputDir) },
         plugins: [
-            new ExtractTextPlugin('site.css'),
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')

@@ -1,0 +1,13 @@
+.curtain {
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: absolute;
+    opacity: .5;
+}
+
+.curtain-children {
+    position: relative;
+    top: 45%;
+    text-align: center;
+}

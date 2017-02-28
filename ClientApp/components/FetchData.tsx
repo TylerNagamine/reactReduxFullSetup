@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { ApplicationState }  from '../store';
 import * as WeatherForecastsState from '../store/WeatherForecasts';
 
-import { Curtain } from './curtain/Curtain';
+import Curtain from './curtain/Curtain';
 
 import CircularProgress from 'material-ui/CircularProgress';
 import RaisedButton from 'material-ui/RaisedButton';

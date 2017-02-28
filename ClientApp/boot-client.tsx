@@ -1,5 +1,5 @@
 import './polyfills';
-import './css/site.css';
+import './styles/site.scss';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';

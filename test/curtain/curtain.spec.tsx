@@ -1,7 +1,7 @@
 import {} from 'jest';
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { Curtain } from '../../ClientApp/components/curtain/Curtain';
+import Curtain from '../../ClientApp/components/curtain/Curtain';
 import * as Renderer from 'react-test-renderer';
 
 describe('Curtain component', () => {

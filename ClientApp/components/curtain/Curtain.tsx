@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Curtain.scss';
 
 export interface ICurtainProps {
     children?: React.ReactNode;
@@ -14,21 +15,7 @@ export interface ICurtainState {
  * Current limitation is that the parent must be set the position: relative.
  * Props: curtainText: string, shown: boolean
  */
-export class Curtain extends React.Component<ICurtainProps, ICurtainState> {
-    styles = {
-        height: '100%',
-        width: '100%',
-        background: 'black',
-        position: 'absolute',
-        opacity: .5
-    };
-
-    childStyles = {
-        position: 'relative',
-        top: '45%',
-        textAlign: 'center'
-    };
-
+export default class Curtain extends React.Component<ICurtainProps, ICurtainState> {
     constructor(props: ICurtainProps) {
         super(props);
     }
@@ -41,8 +28,8 @@ export class Curtain extends React.Component<ICurtainProps, ICurtainState> {
 
     public render() {
         return (
-            <div style={this.styles} hidden={!this.props.shown}>
-                <div style={this.childStyles}>
+            <div className={'curtain'} hidden={!this.props.shown}>
+                <div className={'curtain-children'}>
                     {this.props.children}
                     <br />
                     <span style={{color: 'white'}}>{this.props.curtainText}</span>
