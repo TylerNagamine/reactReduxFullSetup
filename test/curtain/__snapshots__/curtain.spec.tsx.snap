@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Curtain component should match snapshot 1`] = `
+<div
+  className="curtain"
+  hidden={false}
+>
+  <div
+    className="curtain-children"
+  >
+    <br />
+    <span
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      Test text
+    </span>
+  </div>
+</div>
+`;
